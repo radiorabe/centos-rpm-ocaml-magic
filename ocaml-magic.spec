@@ -11,7 +11,8 @@ Source0:  https://github.com/Chris00/ocaml-magic/archive/%{git_ish}.tar.gz
 
 BuildRequires: ocaml
 BuildRequires: ocaml-findlib
-BuildRequires: file-libs
+BuildRequires: file-devel
+Requires:      file
 
 %prep
 %setup -q -n ocaml-magic-%{git_ish}
@@ -33,12 +34,12 @@ make install
 
 %files
 /usr/lib64/ocaml/magic/META
-/usr/lib64/ocaml/magic/xmlplaylist.a
-/usr/lib64/ocaml/magic/xmlplaylist.cma
-/usr/lib64/ocaml/magic/xmlplaylist.cmi
-/usr/lib64/ocaml/magic/xmlplaylist.cmxa
-/usr/lib64/ocaml/magic/xmlplaylist.mli
-/usr/lib64/ocaml/magic/xmlplaylist.cmx
+/usr/lib64/ocaml/magic/magic.a
+/usr/lib64/ocaml/magic/magic.cma
+/usr/lib64/ocaml/magic/magic.cmi
+/usr/lib64/ocaml/magic/magic.cmxa
+/usr/lib64/ocaml/magic/magic.mli
+/usr/lib64/ocaml/magic/magic.cmx
 
 %description
 OCAML bindings for libmagic

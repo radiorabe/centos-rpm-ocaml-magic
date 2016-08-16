@@ -1,18 +1,20 @@
 Name:     ocaml-magic
 
+%define git_ish 3b883ad9cf7c32dc1309d4200bd0af87e5841119
+
 Version:  0.7.3
 Release:  1
 Summary:  OCaml bindings for libmagic
 License:  GPLv2+
 URL:      https://github.com/Chris00/ocaml-magic
-Source0:  https://github.com/Chris00/ocaml-magic/archive/3b883ad9cf7c32dc1309d4200bd0af87e5841119.tar.gz
+Source0:  https://github.com/Chris00/ocaml-magic/archive/%{git_ish}.tar.gz
 
 BuildRequires: ocaml
 BuildRequires: ocaml-findlib
 BuildRequires: file-libs
 
 %prep
-%setup -q 
+%setup -q -n ocaml-magic-%{git_ish}
 
 %build
 ./configure \

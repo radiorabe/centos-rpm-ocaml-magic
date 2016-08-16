@@ -40,6 +40,9 @@ make install
 /usr/lib64/ocaml/magic/magic.cmxa
 /usr/lib64/ocaml/magic/magic.mli
 /usr/lib64/ocaml/magic/magic.cmx
+/usr/lib64/ocaml/magic/libmagic_stubs.a
+/usr/lib64/ocaml/stublibs/dllmagic_stubs.so
+/usr/lib64/ocaml/stublibs/dllmagic_stubs.so.owner
 
 %description
 OCAML bindings for libmagic
